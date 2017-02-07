@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  contextPath: /SpringBootCRUDApp
+
+spring:
+  profiles: prod
+datasource:
+  nutshell:
+    url: jdbc:postgresql://localhost:5432/hibernatedb
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
