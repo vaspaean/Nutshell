@@ -1,9 +1,10 @@
+---
 server:
   port: 8080
   contextPath: /SpringBootCRUDApp
-
+---
 spring:
-  profiles: prod
+  profiles: local, default
 datasource:
   nutshell:
     url: jdbc:postgresql://localhost:5432/hibernatedb
